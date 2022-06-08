@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React from 'react';
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+import Home from './pages/Home';
+import ListofNFT from './pages/ListofNFT';
+import Rent from './pages/Rent';
+import Wallet from './pages/Wallet';
+
+import Navigation from './components/Navigation';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Router>
+        <Navigation /> 
+        <Routes>
+            <Route path='/' element={<Home/>}> </Route>
+
+            <Route path='/ListofNFT' element={<ListofNFT/>}></Route>
+
+            <Route path='/Rent' element={<Rent/>}></Route>
+
+            <Route path='/wallet' element={<Wallet/>}></Route>
+
+            <Route path='/nftlist' element={<nftlist/>}/>
+
+           
+        </Routes>
+    </Router>
+    
+    </>
+  )
 }
 
 export default App;

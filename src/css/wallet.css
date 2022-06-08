@@ -1,0 +1,16 @@
+.wallet{
+	margin: 1rem;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.navStyle {
+   background-color: rgb(203, 145, 36);
+    border: 1px solid black;
+    display : "flex";
+    padding: "6px 12px";
+    border-radius: "30px";
+    border-radius: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
