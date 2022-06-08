@@ -40,7 +40,7 @@ const ListOfNFT = () => {
 
 
         <div>
-          <img src="/images/photo.jpg" alt="NFT pictures" />
+          <img src="/images/nft.png" alt="NFT pictures" />
           <div className="text-center">
           <span className=" bg-gray-200 py-0.5 rounded-full text-lg px-1 ">kuzur</span>
           </div>
